@@ -20,4 +20,3 @@ def mod(a: int, b: int) -> int:
     if b == 0:
         return 999999999999999999999
     return a % b
-h = ""
