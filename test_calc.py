@@ -1,5 +1,6 @@
 import pytest
-from src.calc_methods import *
+from src.calc_methods import summ, sub, mult, div, mod
+
 
 @pytest.mark.parametrize(
     ('a', 'b', 'res'), [
@@ -13,6 +14,7 @@ from src.calc_methods import *
 def test_summ(a, b, res):
     assert summ(a, b) == res
 
+
 @pytest.mark.parametrize(
     ('a', 'b', 'res'), [
         (2, 3, -1),
@@ -24,6 +26,7 @@ def test_summ(a, b, res):
 )
 def test_sub(a, b, res):
     assert sub(a, b) == res
+
 
 @pytest.mark.parametrize(
     ('a', 'b', 'res'), [
@@ -38,9 +41,10 @@ def test_sub(a, b, res):
 def test_mult(a, b, res):
     assert mult(a, b) == res
 
+
 @pytest.mark.parametrize(
     ('a', 'b', 'res'), [
-        (2, 3, 2/3),
+        (2, 3, 2 / 3),
         (0, 0, 999999999999999999999),
         (0, 5, 0),
         (-4, 6, -4 / 6),
@@ -50,6 +54,7 @@ def test_mult(a, b, res):
 )
 def test_div(a, b, res):
     assert div(a, b) == res
+
 
 @pytest.mark.parametrize(
     ('a', 'b', 'res'), [
