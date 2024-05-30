@@ -18,5 +18,5 @@ def div(a: int, b: int) -> float:
 
 def mod(a: int, b: int) -> int:
     if b == 0:
-        return 999999999999999999999
+        return 999999999999999999998
     return a % b
