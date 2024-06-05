@@ -22,5 +22,5 @@ def mod(a: int, b: int) -> int:
     return a % b
 
 
-def molulo(a: int) -> int:
+def modulo(a: int) -> int:
     return abs(a)
