@@ -24,3 +24,25 @@ def mod(a: int, b: int) -> int:
 
 def modulo(a: int) -> int:
     return abs(a)
+
+
+def summFloat(a: float, b: float) -> float:
+    return a + b
+
+
+def subFloat(a: float, b: float) -> float:
+    return a - b
+
+
+def multFloat(a: float, b: float) -> float:
+    return a * b
+
+
+def divFloat(a: float, b: float) -> float:
+    if b == 0:
+        return 999999999999999999999
+    return a / b
+
+
+def moduloFloat(a: float) -> float:
+    return abs(a)
