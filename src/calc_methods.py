@@ -20,3 +20,7 @@ def mod(a: int, b: int) -> int:
     if b == 0:
         return 999999999999999999998
     return a % b
+
+
+def modulo(a: int) -> int:
+    return abs(a)
