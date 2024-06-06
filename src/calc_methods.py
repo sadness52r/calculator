@@ -1,3 +1,6 @@
+import math
+
+
 def summ(a: int, b: int) -> int:
     return a + b
 
@@ -24,3 +27,9 @@ def mod(a: int, b: int) -> int:
 
 def modulo(a: int) -> int:
     return abs(a)
+
+
+def sqrt(a: int) -> float:
+    if a >= 0:
+        return math.sqrt(a)
+    return 999999999999999999999
